@@ -23,6 +23,7 @@ All Credits to go to the original creators/qbcore-framework repository
         distance = 10.0
     }) 
 ```
+
 ```
     --Barber
     local Barber = {
