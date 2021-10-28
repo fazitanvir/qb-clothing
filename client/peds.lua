@@ -20,7 +20,7 @@
 
     --Barber
     local Barber = {
-        `v_serv_bs_clutter`,
+        `v_serv_bs_clutter`, -- Havent added peds / uses the clutter on the barbershop counter
     }
     exports['qb-target']:AddTargetModel(Barber, {
         options = {
