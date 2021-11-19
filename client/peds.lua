@@ -35,41 +35,6 @@
 
 --===================================== Clothing
 
--- Tattoo Shops
-local Barber = {
-  {1324.855, -1650.462, 51.275,"Tattoo",132.527,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {-1151.813, -1424.01, 3.954,"Tattoo",118.299,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {319.726, 181.242, 102.586,"Tattoo",248.22,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {-3170.764, 1072.978, 19.829,"Tattoo",331.763,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {1862.403, 3747.604, 32.032,"Tattoo",337.085,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {-292.272, 6200.646, 30.487,"Tattoo",154.088,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {-1220.706, -1430.603, 3.332,"Tattoo",210.635,0x94AE2B8C,"u_m_y_tattoo_01"},
-  {-1114.473, -1656.324, 3.439,"Tattoo",142.741,0x94AE2B8C,"u_m_y_tattoo_01"},
-
-
-}
-
-Citizen.CreateThread(function()
-
-  for _,v in pairs(Tattoo) do
-    RequestModel(GetHashKey(v[7]))
-    while not HasModelLoaded(GetHashKey(v[7])) do
-      Wait(1)
-    end
-
-    RequestAnimDict("amb@world_human_stand_impatient@male@no_sign@base")
-    while not HasAnimDictLoaded("amb@world_human_stand_impatient@male@no_sign@base") do
-      Wait(1)
-    end
-    ped1 =  CreatePed(4, v[6],v[1],v[2],v[3], 3374176, false, true)
-    SetEntityHeading(ped1, v[5])
-    FreezeEntityPosition(ped1, true)
-    SetEntityInvincible(ped1, true)
-    SetBlockingOfNonTemporaryEvents(ped1, true)
-    TaskPlayAnim(ped1,"amb@world_human_stand_impatient@male@no_sign@base","base", 8.0, 0.0, -1, 1, 0, 0, 0, 0)
-  end
-end)
-
 -- ClothingShops
 local ClothingPed= {
   {199.739, -870.535, 29.713 ,"ClothingShops",159.902,0x5C2CF7F8,"a_f_y_bevhills_02"},
