@@ -1,12 +1,10 @@
-# qb-clothing (re-skin)
-All Credits to go to the original creators/qbcore-framework repository
+# qb-clothing
 
 | If you are intested in recieving github updates join the community on **[Discord](https://discord.gg/NVsaunpesE)**! |
 |----|
 
 
-## Info
-Peds & Target info are now added a "client/peds.lua" file
+## Screenshots
+![payments](https://i.imgur.com/JJ6RfT9.png)
 
-## Screenshot
-![General](https://i.imgur.com/eZPBOKR.png)
+![general](https://i.imgur.com/ykvqWF7.png)
